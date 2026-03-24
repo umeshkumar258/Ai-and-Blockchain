@@ -10,7 +10,7 @@ import {
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 // Process items in batches to avoid overwhelming the backend
 async function batchedAnalyze(leads, batchSize = 5) {
@@ -710,3 +710,4 @@ function App() {
 }
 
 export default App;
+

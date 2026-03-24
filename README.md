@@ -107,3 +107,16 @@ You can use the included `sample-leads.csv` file to test the flow quickly.
 - The backend stores blockchain logs in memory, so logs reset when the server restarts.
 - The frontend is currently configured to call `http://localhost:5000`.
 - This repository is organized for quick local setup and demo-friendly presentation on GitHub.
+
+## Vercel Deployment
+
+This project is configured for Vercel using ercel.json.
+
+Set these Vercel environment variables before production use:
+
+- GMAIL_USER`r
+- GMAIL_PASS`r
+- SHARDEUM_PRIVATE_KEY (optional, enables real blockchain transactions)
+
+The frontend build is served from rontend/dist, and API requests are routed through /api to the Vercel serverless backend.
+
