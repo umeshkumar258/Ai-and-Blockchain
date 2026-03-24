@@ -1,0 +1,10 @@
+{
+  "name": "ai-startup-automation-tool",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "npm.cmd install --prefix backend && npm.cmd install --prefix frontend",
+    "server": "npm.cmd run dev --prefix backend",
+    "client": "npm.cmd run dev --prefix frontend"
+  }
+}

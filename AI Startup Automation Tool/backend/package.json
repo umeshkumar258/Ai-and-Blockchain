@@ -1,0 +1,20 @@
+{
+  "name": "ai-startup-automation-tool-backend",
+  "version": "1.0.0",
+  "description": "Backend for AI Startup Automation Tool",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "ethers": "^6.15.0",
+    "express": "^4.21.2",
+    "nodemailer": "^8.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
